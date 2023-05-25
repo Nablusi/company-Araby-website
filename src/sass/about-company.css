@@ -1,0 +1,75 @@
+.main-about .banner {
+  background-image: url("../images/banner-about.jpg");
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+}
+.main-about .banner::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: rgba(126, 176, 186, 0.537254902);
+}
+.main-about .banner h2 {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.main-about-body {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.main-about-body .about-us p span {
+  color: #FF7866;
+  padding: 0 5px;
+}
+
+.about-body-employee .container .card img {
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+}
+.about-body-employee .container .card .card-body .card-header {
+  background-color: transparent;
+  border: none !important;
+  position: relative;
+}
+.about-body-employee .container .card .card-body .card-header::after {
+  background-color: #ff7866;
+  bottom: 14px;
+  content: "";
+  height: 3px;
+  position: absolute;
+  width: 50px;
+  right: 39%;
+}
+.about-body-employee .container .card .card-body .social-media {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.about-body-employee .container .card .card-body .social-media a {
+  border: 1px solid #ABAAAB;
+  color: #ABAAAB;
+}
+.about-body-employee .container .card .card-body .social-media a.facebook:hover {
+  color: #0571ED;
+  border: solid 1px #0571ED;
+}
+.about-body-employee .container .card .card-body .social-media a.twitter:hover {
+  color: #1DA1F2;
+  border: #1DA1F2 1px solid;
+}
+.about-body-employee .container .card .card-body .social-media a.linked:hover {
+  color: #0077B5;
+  border: 1px solid #0077B5;
+}/*# sourceMappingURL=about-company.css.map */

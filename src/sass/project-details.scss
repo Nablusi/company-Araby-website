@@ -1,0 +1,58 @@
+@import "./variables";
+
+
+.galary{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .container{
+    .card{
+      margin: 50px auto !important; 
+      .card-header{
+        background-color: transparent;
+        margin: 0px 30px !important;
+        .title{
+          h2{
+            color:$main-color;
+          }
+        }
+        .btn{
+          color:$main-color;
+          border:1px solid $main-color;
+          height: 42px;
+          line-height: 26px;
+          &:hover{
+              background-color: $main-color;
+              color:#ffffff;
+          }
+        }
+      }
+      .card-body{
+        p{
+          text-align: justify;
+          margin: 0 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:767px){
+  .galary{
+    .container{
+      .card{
+        .card-header{
+          margin: 0px 0px !important;
+          .btn{
+            height: 70px !important;
+          }
+        }
+        .card-body{
+          p{
+            text-align: justify;
+            margin: 0 0px !important;
+          }
+        }
+      }
+    }
+  }
+}

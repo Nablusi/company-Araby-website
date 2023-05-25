@@ -1,0 +1,71 @@
+.main-contact .banner {
+  background-image: url("../images/banner-contact.jpg");
+  position: relative;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+}
+.main-contact .banner::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: rgba(126, 176, 186, 0.537254902);
+}
+.main-contact .banner h2 {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.main-contact-body {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.main-contact-body .container .row .for-border {
+  margin-bottom: 30px;
+}
+.main-contact-body .container .row .for-border svg {
+  color: #FF7866;
+}
+.main-contact-body .container .row .for-border .email {
+  margin-bottom: 15px;
+}
+.main-contact-body .container .row .social .social-media {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 10px;
+}
+.main-contact-body .container .row .social .social-media a {
+  border: 1px solid #ABAAAB;
+  color: #ABAAAB;
+}
+.main-contact-body .container .row .social .social-media a.facebook:hover {
+  color: #0571ED;
+  border: solid 1px #0571ED;
+}
+.main-contact-body .container .row .social .social-media a.twitter:hover {
+  color: #1DA1F2;
+  border: #1DA1F2 1px solid;
+}
+.main-contact-body .container .row .social .social-media a.linked:hover {
+  color: #0077B5;
+  border: 1px solid #0077B5;
+}
+.main-contact-body .container .row .for-email .btn {
+  border: solid 1px #FF7866;
+  color: #FF7866;
+  margin-top: 25px;
+}
+.main-contact-body .container .row .for-email .btn:hover {
+  color: #ffffff;
+  background-color: #FF7866;
+}
+.main-contact-body .container .row .for-email form .form-control:focus {
+  border: #FF7866 solid 1px !important;
+  box-shadow: none !important;
+}/*# sourceMappingURL=contact.css.map */

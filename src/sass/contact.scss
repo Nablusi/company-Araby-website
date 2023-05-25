@@ -1,0 +1,94 @@
+@import "./variables";
+
+.main-contact{
+    .banner{
+        background-image: url("../images/banner-contact.jpg");
+        position: relative;
+        z-index: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 250px;
+        &::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-color: #7eb0ba89;
+        }
+        h2{
+            color:#ffffff;
+            font-weight: bold;
+        }
+    }
+}
+
+.main-contact-body{
+    padding-top:50px;
+    padding-bottom: 50px;
+    .container{
+        .row{
+            .for-border{
+                svg{
+                    color:$main-color;
+                }
+                margin-bottom: 30px;
+                .email{
+                    margin-bottom: 15px;
+                }
+            }
+            .social{
+                .social-media{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    align-items: center;
+                    gap: 10px;
+                    a{
+                        border:1px solid #ABAAAB;
+                        color:#ABAAAB;
+                        &.facebook{
+                            &:hover{
+                                color:#0571ED;
+                                border: solid 1px #0571ED;
+                            }
+                        }
+                        &.twitter{
+                            &:hover{
+                                color:#1DA1F2;
+                                border:#1DA1F2 1px solid;
+                            }
+                        }
+                        &.linked{
+                            &:hover{
+                                color:#0077B5;
+                                border:1px solid #0077B5;
+                            }
+                        }
+                    }
+                
+                } 
+            }
+            .for-email{
+                .btn{
+                    border:solid 1px $main-color;
+                    color:$main-color;
+                    margin-top:25px;
+                    &:hover{
+                        color:$text-color;
+                        background-color: $main-color;
+                    }
+                }
+                form{
+                    .form-control{
+                        &:focus{
+                            border:$main-color solid 1px !important;
+                            box-shadow: none !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
